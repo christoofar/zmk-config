@@ -16,16 +16,6 @@
 &lt { quick_tap_ms = <200>; };
 &mt { quick_tap_ms = <200>; };
 
-/ {
-    combos {
-        compatible = "zmk,combos";
-        combo_open_curly {
-            timeout-ms = <50>;
-            key-positions = <1 2>;
-            bindings = <&kp STAR>;
-        };
-    };
-};
 
 / {
         keymap {
