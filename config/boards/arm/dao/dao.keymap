@@ -88,7 +88,7 @@
         };
         combo_PAGEDOWN {
             timeout-ms = <50>;
-            key-positions = <8 9>;
+            key-positions = <20 21>;
             bindings = <&kp PAGE_DOWN>;
         };
         combo_HOME {
@@ -98,8 +98,20 @@
         };
         combo_END {
             timeout-ms = <50>;
-            key-positions = <8 9 10>;
+            key-positions = <20 21 22>;
             bindings = <&kp END>;
+        };
+        combo_LGUI {
+            timeout-ms = <50>;
+            key-positions = <32 33>;
+            bindings = <&kp LGUI>;
+        };
+        combo_RGUI {
+	    // This is a quick way to strike the Compose key
+	    // (when the Compose key is mapped to RGUI
+            timeout-ms = <50>;
+            key-positions = <14 15 16 17>;
+            bindings = <&kp RGUI>;
         };	
     };
 };
@@ -143,7 +155,7 @@
 //                          |     |     | ADJ |   | ADJ |     |     |
                         bindings = <
    &trans &kp KP_NUM      &kp EXCL    &kp AT &kp POUND &kp DOLLAR &kp PERCENT          &kp CARET &kp AMPERSAND &kp STAR  &none     &kp SLCK  &kp CAPS &trans
-          &mt LCTRL EQUAL &kp KP_MULTIPLY &kp KP_N4 &kp KP_N5 &kp KP_N6 &kp KP_PLUS    &kp PLUS  &kp EQUAL     &kp UP    &none     &kp BSLH  &kp GRAVE
+          &mt LCTRL EQUAL &kp KP_MULTIPLY &kp KP_N4 &kp KP_N5 &kp KP_N6 &kp KP_PLUS    &kp MINUS &kp EQUAL     &kp UP    &none     &kp BSLH  &kp GRAVE
           &trans          &kp KP_N0       &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp KP_DOT     &kp UNDER &kp PLUS      &kp DOWN  &none     &kp PIPE  &kp TILDE
                                                            &trans &trans &lt ADJ RET   &lt ADJ ESC &trans &trans
                         >;
