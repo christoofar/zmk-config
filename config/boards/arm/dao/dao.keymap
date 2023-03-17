@@ -55,27 +55,27 @@
 
 		default_layer {
 // -----------------------------------------------------------------------------------------
-// |  GUI |   ~  |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |  [   | GUI/] |
-//        | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |CTRL/'|
-//        | LALT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | RALT |
-//                           | RSE | SPC | LWR |   | LWR | BKSP | RSE |
+// |  GUI |   ~  |  Q  |  W  |  E  |  R  |  T  |     |  Y  |  U   |  I  |  O  |  P  |  [   | GUI/] |
+//        | CTRL |  A  |  S  |  D  |  F  |  G  |     |  H  |  J   |  K  |  L  |  ;  |CTRL/'|
+//        | LALT |  Z  |  X  |  C  |  V  |  B  |     |  N  |  M   |  ,  |  .  |  /  | RALT |
+//                           | RSE | LWR | SH ENT |  | LWR | BKSP | RSE |
                         bindings = <
    &kp LWIN &mt LALT TAB &kp Q &kp D &kp R &kp W &kp B &kp J         &kp F  &kp U     &kp P   &kp SEMI    &kp BSPC &mt RWIN RBKT
             &kp LCTRL &kp A &kp S &kp H &kp T &kp G &kp Y         &kp N  &kp E     &kp O   &kp I &kp SQT
             &kp LALT  &kp Z &kp X &kp M &kp C &kp V &kp K         &kp L  &kp COMMA &kp DOT &kp FSLH &kp ESC
-                         &lt RSE LGUI &lt LWR SPACE &mt LSHFT RET &mt LALT SPACE  &mt RSHFT BSPC &lt RSE DEL
+                         &lt RSE LGUI &kb LWR &mt LSHFT RET &mt LALT SPACE  &mt RSHFT BSPC &lt RSE DEL
                         >;
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// |     |  _  |  F1 |  F2 |  F3 |  F4 |  F5 |   |  F6 |  F7 |  F8 |  F9 | F10 | F11 | F12 |
-//       |  +  |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |  -  |
-//       |  =  |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  |     |
+// |     |  _  |  F1 |  F2 |  F3 |  F4 |  F5 |   |  7  |  7 | 8 |  9 | F10 | F11 | F12 |
+//       |  +  |  !  |  @  |  #  |  $  |  %  |   |  4  |  4 | 5 |  6 |  )  |  -  |
+//       |  =  |  1  |  2  |  3  |  4  |  5  |   |  6  |  1 | 2 |  3 |  0  |     |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &trans &kp UNDER      &kp F1   &kp F2 &kp F3   &kp F4   &kp F5           &kp F6    &kp F7   &kp F8   &kp F9   &kp F10  &kp F11 &mt RGUI F12
-          &mt LCTRL PLUS &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT        &kp CARET &kp AMPS &kp STAR &kp LPAR &kp RPAR &mt RCTRL MINUS
-          &mt LALT EQUAL &kp N1   &kp N2 &kp N3   &kp N4   &kp N5           &kp N6    &kp N7   &kp N8   &kp N9   &kp N0   &trans
+   &trans &kp UNDER      &kp F1   &kp F2 &kp UP   &kp F4   &kp F5           &kp F6    &kp N7   &kp N8   &kp N9   &kp F10  &kp F11 &mt RGUI F12
+          &mt LCTRL PLUS &kp EXCL &kp LEFT &kp DOWN &kp RIGHT &kp PRCNT        &kp CARET &kp N4   &kp N5   &kp N6   &kp RPAR &mt RCTRL MINUS
+          &mt LALT EQUAL &kp N1   &kp N2 &kp N3   &kp N4   &kp N5           &kp N0    &kp N1   &kp N2   &kp N3   &kp N0   &trans
                                               &lt ADJ TAB &trans &trans   &trans &trans &lt ADJ DEL
                         >;
                 };
