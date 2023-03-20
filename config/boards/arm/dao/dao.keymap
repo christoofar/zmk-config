@@ -137,9 +137,9 @@
 //       |  =       |  1  |  2  |  3  |  4  |  5  |   |  6  |  1 | 2 |  3 |  0  |     |
 //                              | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &trans &zed_alt_tab   &kp F1   &kp F2 &kp UP   &kp F4   &kp F5           &kp F6    &kp N7   &kp N8   &kp N9   &kp F10  &kp F11 &mt RGUI F12
+   &trans &zed_alt_tab   &kp F1   &kp F2   &kp UP   &kp F4    &kp F5           &kp F6    &kp N7   &kp N8   &kp N9   &kp F10  &kp F11 &mt RGUI F12
           &mt LCTRL PLUS &kp EXCL &kp LEFT &kp DOWN &kp RIGHT &kp PRCNT        &kp SPACE &kp N4   &kp N5   &kp N6   &kp KP_PLUS &kp DEL
-          &mt LALT EQUAL &kp N1   &kp N2 &kp N3   &kp N4   &kp N5           &kp N0    &kp N1   &kp N2   &kp N3   &kp KP_SLASH   &kp KP_DOT
+          &mt LALT EQUAL &kp N1   &kp N2   &kp N3   &kp N4    &kp N5           &kp N0    &kp N1   &kp N2   &kp N3   &kp KP_SLASH   &kp KP_DOT
                                               &trans &trans &kp LSHFT   &kp ENTER &mo ADJ &trans
                         >;
                 };
@@ -164,9 +164,9 @@
 //       |      |     |     |     |     |     |   |     |     |     |     |     |      |
 //                          |     |     |     |   |     |     |     |
                         bindings = <
-   &reset &kp F1  &kp F2        &kp F3        &kp F4        &kp F5        &kp F6         &kp F7        &kp F8        &kp F9        &kp F10        &kp F11      &kp F12 &reset
-          &bt BT_CLR   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4       &bt BT_SEL 4 &bt BT_SEL 3 &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0  &bootloader
-          &none        &none        &none        &none        &none        &none              &none        &none        &none        &none        &none         &none
+   &reset &kp F1      &kp F2       &kp F3       &kp F4       &kp F5        &kp F6             &kp F7       &kp F8       &kp F9       &kp F10      &kp F11       &kp F12 &reset
+          &bt BT_CLR  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3  &bt BT_SEL 4       &bt BT_SEL 4 &bt BT_SEL 3 &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0  &none
+          &bootloader &none        &none        &none        &none         &none              &none        &none        &none        &none        &none         &bootloader
                                                                     &trans &none &trans   &trans &none &trans
                         >;
                 };
