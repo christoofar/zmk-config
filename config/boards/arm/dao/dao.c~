@@ -82,7 +82,7 @@
         };
         combo_END {
             timeout-ms = <50>;
-            key-positions = <20 21 22>;
+            key-positions = <19 20 21>;
             bindings = <&kp END>;
         };
         combo_LGUI {
@@ -94,7 +94,7 @@
 	    // This is a quick way to strike the Compose key
 	    // (when the Compose key is mapped to RGUI
             timeout-ms = <50>;
-            key-positions = <15 16 17 18>;
+            key-positions = <14 15 16 17>;
             bindings = <&kp RGUI>;
         };	
     };
