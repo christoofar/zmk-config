@@ -139,7 +139,7 @@
                         bindings = <
    &trans &zed_alt_tab   &kp F1   &kp F2   &kp UP   &kp F4     &kp F5               &kp F6    &kp N7   &kp N8   &kp N9   &kp F10  &kp F11 &mt RGUI F12
           &mt LCTRL PLUS &kp EXCL &kp LEFT &kp DOWN &kp RIGHT  &none                &kp SPACE &kp N4   &kp N5   &kp N6   &kp KP_PLUS &kp DEL
-          &mt LALT EQUAL &kp N1   &kp N2   &kp N3   &to CAN    &kp KP_NUM           &kp N0    &kp N1   &kp N2   &kp N3   &kp KP_SLASH   &kp KP_DOT
+          &mt LALT EQUAL &kp N1   &kp N2   &to DEF  &to CAN    &kp KP_NUM           &kp N0    &kp N1   &kp N2   &kp N3   &kp KP_SLASH   &kp KP_DOT
                                            &trans   &trans     &kp LSHFT            &kp ENTER &mo ADJ &trans
                         >;
                 };
