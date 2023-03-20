@@ -111,23 +111,23 @@
 //        | LALT     |  Z  |  X  |  M  |  C  |  V  |     |  K  |  L   |  ,  |  .  |  /  |  ESC   |
 //                           | RSE | LWR | SH ENT |  | LWR | BKSP | RSE |
                         bindings = <
-   &kp LWIN &mt LALT TAB &kp Q &kp D &kp R &kp W &kp B &kp J         &kp F  &kp U     &kp P   &kp SEMI    &kp BSPC &mt RWIN RBKT
+   &none    &mt LALT TAB &kp Q &kp D &kp R &kp W &kp B &kp J         &kp F  &kp U     &kp P   &kp SEMI    &kp BSPC &none
             &kp LCTRL &kp A &kp S &kp H &kp T &kp G &kp Y         &kp N  &kp E     &kp O   &kp I &kp SQT
             &kp LALT  &kp Z &kp X &kp M &kp C &kp V &kp K         &kp L  &kp COMMA &kp DOT &kp FSLH &kp ESC
-                         &lt RSE LGUI &mo LWR &mt LSHFT RET &kp SPACE  &mo RSE  &lt RSE DEL
+                         &kp LGUI &mo LWR &mt LSHFT RET &kp SPACE  &mo RSE  &lt RSE DEL
                         >;
                 };
 		canary_layer {
 // -----------------------------------------------------------------------------------------
-// |  GUI | ALT/TAB  |  Q  |  W  |  E  |  R  |  T  |     |  Y  |  U   |  I  |  O  |  P  |  [   | GUI/] |
-//        | CTRL     |  A  |  S  |  D  |  F  |  G  |     |  H  |  J   |  K  |  L  |  ;  |CTRL/'|
-//        | LALT     |  Z  |  X  |  C  |  V  |  B  |     |  N  |  M   |  ,  |  .  |  /  | RALT |
+// |      | ALT/TAB  |  Q  |  D  |  R  |  W  |  B  |     |  Z  |  F   |  O  |  U  |  '  |  DEL |
+//        | CTRL     |  C  |  R  |  S  |  T  |  G  |     |  M  |  N   |  E  |  I  |  A  |  ;   |
+//        | LALT     |  Q  |  J  |  V  |  D  |  K  |     |  X  |  H   |  /  |  ,  |  .  |  ESC |
 //                           | RSE | LWR | SH ENT |  | LWR | BKSP | RSE |
                         bindings = <
-   &kp LWIN &mt LALT TAB &kp Q &kp D &kp R &kp W &kp B &kp J         &kp F  &kp U     &kp P   &kp SEMI    &kp BSPC &mt RWIN RBKT
-            &kp LCTRL &kp A &kp S &kp H &kp T &kp G &kp Y         &kp N  &kp E     &kp O   &kp I &kp SQT
-            &kp LALT  &kp Z &kp X &kp M &kp C &kp V &kp K         &kp L  &kp COMMA &kp DOT &kp FSLH &kp ESC
-                         &lt RSE LGUI &mo LWR &mt LSHFT RET &kp SPACE  &mo RSE  &lt RSE DEL
+   &none    &mt LALT TAB &kp Q &kp D &kp R &kp W &kp B            &kp Z  &kp F  &kp O     &kp U     &kp SQT     &kp BSPC &none
+            &kp LCTRL    &kp C &kp R &kp S &kp T &kp G            &kp M  &kp N  &kp E     &kp I     &kp A       &kp SEMI
+            &kp LALT     &kp Q &kp J &kp V &kp D &kp K            &kp X  &kp H  &kp FSLH  &kp COMMA &kp DOT     &kp ESC
+                         &kp LGUI &mo LWR &mt LSHFT RET       &kp SPACE  &mo RSE  &lt RSE DEL
                         >;
                 };		
                 lower_layer {
@@ -140,7 +140,7 @@
    &trans &zed_alt_tab   &kp F1   &kp F2 &kp UP   &kp F4   &kp F5           &kp F6    &kp N7   &kp N8   &kp N9   &kp F10  &kp F11 &mt RGUI F12
           &mt LCTRL PLUS &kp EXCL &kp LEFT &kp DOWN &kp RIGHT &kp PRCNT        &kp SPACE &kp N4   &kp N5   &kp N6   &kp KP_PLUS &kp DEL
           &mt LALT EQUAL &kp N1   &kp N2 &kp N3   &kp N4   &kp N5           &kp N0    &kp N1   &kp N2   &kp N3   &kp KP_SLASH   &kp KP_DOT
-                                              &lt ADJ TAB &trans &kp LSHFT   &kp ENTER &mo ADJ &trans
+                                              &trans &trans &kp LSHFT   &kp ENTER &mo ADJ &trans
                         >;
                 };
 
@@ -151,9 +151,9 @@
 //       |      |  0  |  1  |  2  |  3  |  .  |   | _ | + | DOWN| PGDN| | | ~ |
 //                          |     |     | ADJ |   | ADJ |     |     |
                         bindings = <
-   &trans &kp KP_NUM      &kp EXCL    &kp AT &kp POUND &kp DOLLAR &kp PERCENT          &kp CARET &kp AMPERSAND &kp STAR  &none     &kp SLCK  &kp CAPS &trans
-          &mt LCTRL EQUAL &kp KP_MULTIPLY &kp KP_N4 &kp KP_N5 &kp KP_N6 &kp KP_PLUS    &kp MINUS &kp EQUAL     &kp UP    &none     &kp BSLH  &kp GRAVE
-          &trans          &kp KP_N0       &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp KP_DOT     &kp UNDER &kp PLUS      &kp DOWN  &none     &kp PIPE  &kp TILDE
+   &trans &kp KP_NUM      &kp EXCL        &kp AT    &kp POUND &kp DOLLAR &kp PERCENT          &kp CARET &kp AMPERSAND &kp STAR  &none     &kp SLCK  &kp CAPS &trans
+          &mt LCTRL EQUAL &kp KP_MULTIPLY &kp KP_N4 &kp KP_N5 &kp KP_N6  &kp KP_PLUS    &kp MINUS &kp EQUAL     &kp UP    &none     &kp BSLH  &kp GRAVE
+          &trans          &kp KP_N0       &kp KP_N1 &kp KP_N2 &to CAN    &kp KP_NUM       &kp UNDER &kp PLUS      &kp DOWN  &none     &kp PIPE  &kp TILDE
                                                            &trans &trans &lt ADJ RET   &lt ADJ ESC &trans &trans
                         >;
                 };
