@@ -119,12 +119,12 @@
                 };
 		canary_layer {
 // -----------------------------------------------------------------------------------------
-// |      | ALT/TAB  |  Q  |  D  |  R  |  W  |  B  |     |  Z  |  F   |  O  |  U  |  '  |  DEL |
+// |      | ALT/TAB  |  W  |  L  |  Y  |  P  |  B  |     |  Z  |  F   |  O  |  U  |  '  |  DEL |
 //        | CTRL     |  C  |  R  |  S  |  T  |  G  |     |  M  |  N   |  E  |  I  |  A  |  ;   |
 //        | LALT     |  Q  |  J  |  V  |  D  |  K  |     |  X  |  H   |  /  |  ,  |  .  |  ESC |
 //                           | RSE | LWR | SH ENT |  | LWR | BKSP | RSE |
                         bindings = <
-   &none    &mt LALT TAB &kp Q &kp D &kp R &kp W &kp B            &kp Z  &kp F  &kp O     &kp U     &kp SQT     &kp BSPC &none
+   &none    &mt LALT TAB &kp W &kp L &kp Y &kp P &kp B            &kp Z  &kp F  &kp O     &kp U     &kp SQT     &kp BSPC &none
             &kp LCTRL    &kp C &kp R &kp S &kp T &kp G            &kp M  &kp N  &kp E     &kp I     &kp A       &kp SEMI
             &kp LALT     &kp Q &kp J &kp V &kp D &kp K            &kp X  &kp H  &kp FSLH  &kp COMMA &kp DOT     &kp ESC
                          &kp LGUI &mo LWR &mt LSHFT RET       &kp SPACE  &mo RSE  &lt RSE DEL
