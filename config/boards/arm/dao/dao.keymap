@@ -85,10 +85,10 @@
             timeout-ms = <50>;
             key-positions = <7 8>;
             bindings = <&kp PAGE_UP>;
-        };
-        combo_PAGEDOWN {
+        }; 
+       combo_PAGEDOWN {
             timeout-ms = <50>;
-            key-positions = <19 20>;
+            key-positions = <20 21>;
             bindings = <&kp PAGE_DOWN>;
         };
         combo_HOME {
