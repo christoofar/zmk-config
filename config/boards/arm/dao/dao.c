@@ -94,7 +94,7 @@
 	    // This is a quick way to strike the Compose key
 	    // (when the Compose key is mapped to RGUI
             timeout-ms = <50>;
-            key-positions = <15 16 17 18>;
+            key-positions = <14 15 16 17>;
             bindings = <&kp RGUI>;
         };	
     };
@@ -105,56 +105,55 @@
                 compatible = "zmk,keymap";
 
 		default_layer {
-// -----------------------------------------------------------------------------------------
-// |      | ALT/TAB  |  Q  |  D  |  R  |  W  |  B  |     |  J  |  F   |  U  |  P  |  ;  |  DEL   |    |
-//        | CTRL     |  A  |  S  |  H  |  T  |  G  |     |  Y  |  N   |  E  |  O  |  I  |  '     |
-//        | LALT     |  Z  |  X  |  M  |  C  |  V  |     |  K  |  L   |  ,  |  .  |  /  |  ESC   |
-//                           | RSE | LWR | SH ENT |  | LWR | BKSP | RSE |
+// --------------------------------------------------------------------------------------------------------
+// |      | ALT/TAB  |  Q  |  D  |  R  |  W  |  B  |     |  J  |  F   |  U  |  P  |  ;  |  ALT/DEL   |    |
+//        | CTRL     |  A  |  S  |  H  |  T  |  G  |     |  Y  |  N   |  E  |  O  |  I  |  CTRL/'    |
+//        | LALT     |  Z  |  X  |  M  |  C  |  V  |     |  K  |  L   |  ,  |  .  |  /  |  ESC       |
+//                           | LGUI | LWR | SH ENT |     | SPC | RSE | RSE |
                         bindings = <
-   &none    &mt LALT TAB &kp Q &kp D &kp R &kp W &kp B &kp J         &kp F  &kp U     &kp P   &kp SEMI    &kp BSPC &none
-            &kp LCTRL &kp A &kp S &kp H &kp T &kp G &kp Y         &kp N  &kp E     &kp O   &kp I &kp SQT
-            &kp LALT  &kp Z &kp X &kp M &kp C &kp V &kp K         &kp L  &kp COMMA &kp DOT &kp FSLH &kp ESC
-                         &kp LGUI &mo LWR &mt LSHFT RET &kp SPACE  &mo RSE  &lt RSE DEL
+   &none    &mt LALT TAB   &kp Q &kp D &kp R &kp W &kp B &kp J         &kp F  &kp U     &kp P   &kp SEMI    &mt RALT BSPC &none
+            &kp LCTRL      &kp A &kp S &kp H &kp T &kp G &kp Y         &kp N  &kp E     &kp O   &kp I       &mt RCTRL SQT
+            &kp LALT       &kp Z &kp X &kp M &kp C &kp V &kp K         &kp L  &kp COMMA &kp DOT &kp FSLH    &kp ESC
+                               &kp LGUI &mo LWR &mt LSHFT RET          &kp SPACE  &mo RSE  &lt RSE DEL
                         >;
                 };
 		canary_layer {
-// -----------------------------------------------------------------------------------------
-// |      | ALT/TAB  |  W  |  L  |  Y  |  P  |  B  |     |  Z  |  F   |  O  |  U  |  '  |  DEL |
-//        | CTRL     |  C  |  R  |  S  |  T  |  G  |     |  M  |  N   |  E  |  I  |  A  |  ;   |
-//        | LALT     |  Q  |  J  |  V  |  D  |  K  |     |  X  |  H   |  /  |  ,  |  .  |  ESC |
-//                           | RSE | LWR | SH ENT |  | LWR | BKSP | RSE |
+// -------------------------------------------------------------------------------------------------------
+// |      | ALT/TAB  |  W  |  L  |p  Y  |  P  |  B  |     |  Z  |  F   |  O  |  U  |  '  |  ALT/DEL |     |
+//        | CTRL     |  C  |  R  |  S  |  T  |  G  |     |  M  |  N   |  E  |  I  |  A  |  CTRL/;  |
+//        | LALT     |  Q  |  J  |  V  |  D  |  K  |     |  X  |  H   |  /  |  ,  |  .  |  ESC     |
+//                           | LGUI | LWR | SH ENT |     | SPC | RSE  | RSE |
                         bindings = <
-   &none    &mt LALT TAB &kp W &kp L &kp Y &kp P &kp B            &kp Z  &kp F  &kp O     &kp U     &kp SQT     &kp BSPC &none
-            &kp LCTRL    &kp C &kp R &kp S &kp T &kp G            &kp M  &kp N  &kp E     &kp I     &kp A       &kp SEMI
+   &none    &mt LALT TAB &kp W &kp L &kp Y &kp P &kp B            &kp Z  &kp F  &kp O     &kp U     &kp SQT     &mt RALT BSPC  &none
+            &kp LCTRL    &kp C &kp R &kp S &kp T &kp G            &kp M  &kp N  &kp E     &kp I     &kp A       &mt RCTRL SEMI
             &kp LALT     &kp Q &kp J &kp V &kp D &kp K            &kp X  &kp H  &kp FSLH  &kp COMMA &kp DOT     &kp ESC
                          &kp LGUI &mo LWR &mt LSHFT RET       &kp SPACE  &mo RSE  &lt RSE DEL
                         >;
                 };		
                 lower_layer {
-// -----------------------------------------------------------------------------------------
-// |     |  ALTTAB  |  F1 |  F2 |  F3 |  F4 |  F5 |   |  7  |  7 | 8 |  9 | F10 | F11 | F12 |
-//       |  +       |  !  |  @  |  #  |  $  |  %  |   |  4  |  4 | 5 |  6 |  )  |  -  |
-//       |  =       |  1  |  2  |  3  |  4  |  5  |   |  6  |  1 | 2 |  3 |  0  |     |
-//                              | GUI |     | SPC |   | ENT |     | ALT |
+// ---------------------------------------------------------------------------------------------------
+// |     |  ALT/TAB |      |      |  UP   |       |      |     |     |  7 | 8 |  9 |     |     |     |
+//       |  CTRL    |      | LEFT | DOWN  | RGHT  |      |     | SPC |  4 | 5 |  6 |  +  | DEL |
+//       |  LALT    |      |      |DEFAULT|CANARY | NUM  |     |  0  |  1 | 2 |  3 |  /  |  .  |
+//                                | GUI |     | SHFT |        | ENT |     | ALT |
                         bindings = <
-   &trans &zed_alt_tab   &kp F1   &kp F2   &kp UP   &kp F4     &kp F5               &kp F6    &kp N7   &kp N8   &kp N9   &kp F10  &kp F11 &mt RGUI F12
-          &mt LCTRL PLUS &kp EXCL &kp LEFT &kp DOWN &kp RIGHT  &none                &kp SPACE &kp N4   &kp N5   &kp N6   &kp KP_PLUS &kp DEL
-          &mt LALT EQUAL &kp N1   &kp N2   &to DEF  &to CAN    &kp KP_NUM           &kp N0    &kp N1   &kp N2   &kp N3   &kp KP_SLASH   &kp KP_DOT
+   &trans &zed_alt_tab   &none    &none   &kp UP    &kp none   &none                &none     &kp N7   &kp N8   &kp N9   &none          &none &none
+          &kp LCTRL      &none    &kp LEFT &kp DOWN &kp RIGHT  &none                &kp SPACE &kp N4   &kp N5   &kp N6   &kp KP_PLUS    &kp DEL
+          &kp LALT       &none    &none    &to DEF  &to CAN    &kp KP_NUM           &kp N0    &kp N1   &kp N2   &kp N3   &kp KP_SLASH   &kp KP_DOT
                                            &trans   &trans     &kp LSHFT            &kp ENTER &mo ADJ &trans
                         >;
                 };
-
                 raise_layer {
-// -----------------------------------------------------------------------------------------
-// |     | NMLK |  !  |  @  |  #  |  $  |  %  |   | ^ | & | * | PGUP| SCLK| CLCK|     |
-//       | CTRL |  *  |  4  |  5  |  6  |  +  |   | - | = |  UP | RGHT| \ | ` |
-//       |      |  0  |  1  |  2  |  3  |  .  |   | _ | + | DOWN| PGDN| | | ~ |
-//                          |     |     | ADJ |   | ADJ |     |     |
+// ---------------------------------------------------------------------------------------------------
+// |     | NMLK |  !  |  @  |  #  |  $  |  %  |          |  ^  |  &  |  *  |     | SCLK | CAPS |     |
+//       | CTRL |     |     |     |     |     |          |  -  |  =  |  UP |     |  \   |   `  |
+//       |      |     |     |     |     |     |          |  _  |  +  | DOWN|     |  |   |   ~  |
+//                          |     |     | ADJ |          | ADJ |     |     |
                         bindings = <
-   &trans &kp KP_NUM      &kp EXCL        &kp AT    &kp POUND &kp DOLLAR &kp PERCENT          &kp CARET &kp AMPERSAND &kp STAR  &none     &kp SLCK  &kp CAPS &trans
-          &mt LCTRL EQUAL &kp KP_MULTIPLY &kp KP_N4 &kp KP_N5 &kp KP_N6  &kp KP_PLUS    &kp MINUS &kp EQUAL     &kp UP    &none     &kp BSLH  &kp GRAVE
-          &trans          &kp KP_N0       &kp KP_N1 &kp KP_N2 &to CAN    &kp KP_NUM       &kp UNDER &kp PLUS      &kp DOWN  &none     &kp PIPE  &kp TILDE
-                                                           &trans &trans &lt ADJ RET   &lt ADJ ESC &trans &trans
+   &trans &kp KP_NUM   &kp EXCL    &kp AT     &kp POUND &kp DOLLAR &kp PERCENT              &kp CARET &kp AMPERSAND &kp STAR  &none     &kp SLCK  &kp CAPS &trans
+          &kp LCTRL    &none       &none      &none     &none      &none                    &kp MINUS &kp EQUAL     &kp UP    &none     &kp BSLH  &kp GRAVE
+          &trans       &none       &none      &none     &to CAN    &none                    &kp UNDER &kp PLUS      &kp DOWN  &none     &kp PIPE  &kp TILDE
+                                                           &trans &trans &lt ADJ RET        &lt ADJ ESC &trans &trans
                         >;
                 };
                 adjust_layer {
