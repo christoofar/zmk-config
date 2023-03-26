@@ -94,7 +94,7 @@
 	    // This is a quick way to strike the Compose key
 	    // (when the Compose key is mapped to RGUI
             timeout-ms = <50>;
-            key-positions = <14 15 16 17>;
+            key-positions = <15 16 17 18>;
             bindings = <&kp RGUI>;
         };	
     };
