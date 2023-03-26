@@ -9,10 +9,9 @@
 #include <dt-bindings/zmk/bt.h>
 
 #define DEF 0
-#define CAN 1
-#define LWR 2
-#define RSE 3
-#define ADJ 4
+#define LWR 1
+#define RSE 2
+#define ADJ 3
 
 &lt { quick_tap_ms = <200>; };
 &mt { quick_tap_ms = <200>; };
@@ -105,21 +104,8 @@
                 compatible = "zmk,keymap";
 
 		default_layer {
-// --------------------------------------------------------------------------------------------------------
-// |      | ALT/TAB  |  Q  |  D  |  R  |  W  |  B  |     |  J  |  F   |  U  |  P  |  ;  |  ALT/DEL   |    |
-//        | CTRL     |  A  |  S  |  H  |  T  |  G  |     |  Y  |  N   |  E  |  O  |  I  |  CTRL/'    |
-//        | LALT     |  Z  |  X  |  M  |  C  |  V  |     |  K  |  L   |  ,  |  .  |  /  |  ESC       |
-//                           | LGUI | LWR | SH ENT |     | SPC | RSE | RSE |
-                        bindings = <
-   &none    &mt LALT TAB   &kp Q &kp D &kp R &kp W &kp B &kp J         &kp F  &kp U     &kp P   &kp SEMI    &mt RALT BSPC &none
-            &kp LCTRL      &kp A &kp S &kp H &kp T &kp G &kp Y         &kp N  &kp E     &kp O   &kp I       &mt RCTRL SQT
-            &kp LALT       &kp Z &kp X &kp M &kp C &kp V &kp K         &kp L  &kp COMMA &kp DOT &kp FSLH    &kp ESC
-                               &kp LGUI &mo LWR &mt LSHFT RET          &kp SPACE  &mo RSE  &lt RSE DEL
-                        >;
-                };
-		canary_layer {
 // -------------------------------------------------------------------------------------------------------
-// |      | ALT/TAB  |  W  |  L  |p  Y  |  P  |  B  |     |  Z  |  F   |  O  |  U  |  '  |  ALT/DEL |     |
+// |      | ALT/TAB  |  W  |  L  |  Y  |  P  |  B  |     |  Z  |  F   |  O  |  U  |  '  |  ALT/DEL |     |
 //        | CTRL     |  C  |  R  |  S  |  T  |  G  |     |  M  |  N   |  E  |  I  |  A  |  CTRL/;  |
 //        | LALT     |  Q  |  J  |  V  |  D  |  K  |     |  X  |  H   |  /  |  ,  |  .  |  ESC     |
 //                           | LGUI | LWR | SH ENT |     | SPC | RSE  | RSE |
@@ -139,7 +125,7 @@
                         bindings = <
    &trans &zed_alt_tab   &none    &none    &kp UP   &none      &none         &none     &kp N7   &kp N8   &kp N9   &none          &none      &none
           &kp LCTRL      &none    &kp LEFT &kp DOWN &kp RIGHT  &none         &kp SPACE &kp N4   &kp N5   &kp N6   &kp KP_PLUS    &kp DEL
-          &kp LALT       &none    &none    &to DEF  &to CAN    &kp KP_NUM    &kp N0    &kp N1   &kp N2   &kp N3   &kp KP_SLASH   &kp KP_DOT
+          &kp LALT       &none    &none    &none    &none    &kp KP_NUM    &kp N0    &kp N1   &kp N2   &kp N3   &kp KP_SLASH   &kp KP_DOT
                                            &trans   &trans     &kp LSHFT     &kp ENTER &mo ADJ &trans
                         >;
                 };
