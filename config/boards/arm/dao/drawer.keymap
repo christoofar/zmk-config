@@ -1,0 +1,105 @@
+layout: {qmk_keyboard: jorne/rev1}
+layers:
+  default_layer:
+  - - ''
+    - {t: TAB, h: LALT}
+    - W
+    - L
+    - Y
+    - P
+    - B
+    - Z
+    - F
+    - O
+  - - U
+    - ''''
+    - {t: BSPC, h: RALT}
+    - ''
+    - LCTRL
+    - C
+    - R
+    - S
+    - T
+    - G
+  - - M
+    - N
+    - E
+    - I
+    - A
+    - {t: ;, h: RCTRL}
+    - LALT
+    - Q
+    - J
+    - V
+  - [D, K, X, H, /, ',', ., ESC, LGUI, lower_layer]
+  - - {t: RET, h: LSHFT}
+    - SPACE
+    - raise_layer
+    - LGUI
+  lower_layer:
+  - ['', '&zed_alt_tab', '', '', UP, '', '', '', '7', '8']
+  - ['9', '', '', '', LCTRL, '', LEFT, DOWN, RIGHT, '']
+  - [SPACE, '4', '5', '6', KP PLUS, DEL, LALT, '', '', '']
+  - - ''
+    - KP NUM
+    - '0'
+    - '1'
+    - '2'
+    - '3'
+    - KP SLASH
+    - KP DOT
+    - ''
+    - {type: held}
+  - [LSHFT, ENTER, adjust_layer, '']
+  raise_layer:
+  - ['', KP NUM, '!', '@', '#', $, '%', ^, '&', '*']
+  - ['', SLCK, CAPS, '', LCTRL, '', '', '', '', '']
+  - ['-', '=', UP, '', \, '`', '', '', '', '']
+  - ['', '', _, +, DOWN, '', '|', '~', '', '']
+  - - {t: RET, h: adjust_layer}
+    - {t: ESC, h: adjust_layer}
+    - {type: held}
+    - ''
+  adjust_layer:
+  - ['&reset', F1, F2, F3, F4, F5, F6, F7, F8, F9]
+  - [F10, F11, F12, '&reset', BT CLR, BT 0, BT 1, BT 2, BT 3, BT 4]
+  - [BT 4, BT 3, BT 2, BT 1, BT 0, '', '&bootloader', '', '', '']
+  - - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - '&bootloader'
+    - ''
+    - {type: held}
+  - - ''
+    - ''
+    - {type: held}
+    - ''
+combos:
+- p: [17, 18]
+  k: (
+- p: [18, 19]
+  k: )
+- p: [21, 22]
+  k: '{'
+- p: [22, 23]
+  k: '}'
+- p: [33, 34]
+  k: '['
+- p: [34, 35]
+  k: ']'
+- p: [7, 8]
+  k: PAGE UP
+- p: [20, 21]
+  k: PAGE DOWN
+- p: [7, 8, 9]
+  k: HOME
+- p: [20, 21, 22]
+  k: END
+- p: [32, 33]
+  k: LGUI
+- p: [15, 16, 17, 18]
+  k: RGUI
