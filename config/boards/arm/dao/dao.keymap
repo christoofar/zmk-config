@@ -35,33 +35,33 @@
     combos {
         compatible = "zmk,combos";
         combo_LPAR {
-            timeout-ms = <35>;
+            timeout-ms = <50>;
             key-positions = <17 21>;
             bindings = <&kp LPAR>;
         };
         combo_RPAR {
-            timeout-ms = <35>;
+            timeout-ms = <50>;
             key-positions = <18 22>;
             bindings = <&kp RPAR>;
         };
         combo_LCURLY {
-            timeout-ms = <35>;
+            timeout-ms = <50>;
             key-positions = <16 23>;
             bindings = <&kp LEFT_BRACE>;
         };
         combo_RCURLY {
-            timeout-ms = <35>;
+            timeout-ms = <50>;
             key-positions = <29 34>;
             bindings = <&kp RIGHT_BRACE>;
         };
         combo_LBRACKET {
-            timeout-ms = <35>;
-            key-positions = <33 34>;
+            timeout-ms = <50>;
+            key-positions = <29 33>;
             bindings = <&kp LEFT_BRACKET>;
         };	
         combo_RBRACKET {
-            timeout-ms = <35>;
-            key-positions = <34 35>;
+            timeout-ms = <50>;
+            key-positions = <30 34>;
             bindings = <&kp RIGHT_BRACKET>;
         };
         combo_PAGEUP {
