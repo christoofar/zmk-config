@@ -64,7 +64,6 @@
             key-positions = <18 23>;
             bindings = <&kp RIGHT_BRACKET>;
         };
-	/*
 	combo_LESSTHAN {
 	    timeout-ms = <70>;
 	    key-positions = <17 24>;
@@ -75,7 +74,6 @@
 	    key-positions = <18 24>;
 	    bindings = <&kp GREATER_THAN>;
 	};
-	*/
         combo_PAGEUP {
             timeout-ms = <35>;
             key-positions = <7 8>;
