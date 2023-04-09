@@ -26,14 +26,14 @@
             bindings
                 = <&macro_press &kp LALT>
                 , <&macro_tap &kp TAB>
-                , <&macro_release &kp combos>
+                , <&macro_release &kp LALT>
                 ;
         };
     };
 };
 
 / {
-    LALT {
+    combos {
         compatible = "zmk,combos";
         combo_LPAR {
             timeout-ms = <70>;
@@ -175,12 +175,12 @@
 //       |  LALT    |      |      |DEFAULT|CANARY | NUM  |     |  0  |  1 | 2 |  3 |  /  |  .  |
 //                                | GUI |     | SHFT |        | ENT |     | ALT |
                         bindings = <
-   &trans &zed_alt_tab   &none    &none    &none   &none      &none         &none     &none    &kp UP   &none   &none          &none      &none
-          &kp LCTRL      &none    &none    &none   &none      &none         &none     &kp LEFT   &kp DOWN   &RIGHT   &none    &none
-          &kp LALT       &none    &none    &none    &to DEF     &none         &none     &none   &none   &none   &none   &none
+   &trans &zed_alt_tab   &none    &none    &none   &none      &none          &none    &none    &kp UP       &none   &none          &none      &none
+          &kp LCTRL      &none    &none    &none   &none      &none          &none    &kp LEFT   &kp DOWN   &kp RIGHT   &kp none    &none
+          &kp LALT       &none    &none    &none    &to DEF     &none          &none    &none   &none   &none   &none   &none
                                            &trans   &trans     &kp LSHFT     &kp ENTER &mo ADJ &trans
                         >;
-                };		
+                };
+		
         };
 };
-
