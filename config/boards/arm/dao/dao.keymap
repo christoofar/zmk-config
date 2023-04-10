@@ -47,7 +47,7 @@
         };
         combo_LCURLY {
             timeout-ms = <70>;
-            key-positions = <17 22>;
+            key-positions = <15 22>;
             bindings = <&kp LEFT_BRACE>;
         };
         combo_RCURLY {
@@ -57,7 +57,7 @@
         };
         combo_LBRACKET {
             timeout-ms = <70>;
-            key-positions = <17 23>;
+            key-positions = <15 23>;
             bindings = <&kp LEFT_BRACKET>;
         };	
         combo_RBRACKET {
@@ -67,7 +67,7 @@
         };
 	combo_LESSTHAN {
 	    timeout-ms = <70>;
-	    key-positions = <17 24>;
+	    key-positions = <15 24>;
 	    bindings = <&kp LESS_THAN>;
 	};
 	combo_GREATERTHAN {
@@ -80,11 +80,21 @@
             key-positions = <7 8>;
             bindings = <&kp PAGE_UP>;
         }; 
-       combo_PAGEDOWN {
+        combo_PAGEDOWN {
             timeout-ms = <35>;
             key-positions = <20 21>;
             bindings = <&kp PAGE_DOWN>;
         };
+	combo_QUOTE {
+	    timeout-ms = <70>;
+	    key-positions = <15 9>;
+	    bindings = <&kp SINGLE_QUOTE>;
+	};
+	combo_DOUBLEQUOTE {
+	    timeout-ms = <70>;
+	    key-positions = <15 10>;
+	    bindings = <&kp DOUBLE_QUOTES>;
+	};
         combo_HOME {
             timeout-ms = <50>;
             key-positions = <7 8 9>;
