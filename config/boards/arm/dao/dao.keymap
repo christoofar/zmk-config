@@ -93,7 +93,7 @@
 	combo_DOUBLEQUOTE {
 	    timeout-ms = <70>;
 	    key-positions = <15 10>;
-	    bindings = <&kp DOUBLE_QUOTES>;
+	    bindings = <&kp QUOTE(DOUBLE)>;
 	};
         combo_HOME {
             timeout-ms = <50>;
