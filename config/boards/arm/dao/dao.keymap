@@ -42,37 +42,37 @@
         };
         combo_RPAR {
             timeout-ms = <70>;
-            key-positions = <18 21>;
+            key-positions = <15 24>;
             bindings = <&kp RPAR>;
         };
         combo_LCURLY {
             timeout-ms = <70>;
-            key-positions = <15 22>;
+            key-positions = <18 21>;
             bindings = <&kp LEFT_BRACE>;
         };
         combo_RCURLY {
             timeout-ms = <70>;
-            key-positions = <18 22>;
+            key-positions = <18 24>;
             bindings = <&kp RIGHT_BRACE>;
         };
         combo_LBRACKET {
             timeout-ms = <70>;
-            key-positions = <15 23>;
+            key-positions = <17 21>;
             bindings = <&kp LEFT_BRACKET>;
         };	
         combo_RBRACKET {
             timeout-ms = <70>;
-            key-positions = <18 23>;
+            key-positions = <17 24>;
             bindings = <&kp RIGHT_BRACKET>;
         };
 	combo_LESSTHAN {
 	    timeout-ms = <70>;
-	    key-positions = <15 24>;
+	    key-positions = <16 21>;
 	    bindings = <&kp LESS_THAN>;
 	};
 	combo_GREATERTHAN {
 	    timeout-ms = <70>;
-	    key-positions = <18 24>;
+	    key-positions = <16 24>;
 	    bindings = <&kp GREATER_THAN>;
 	};
         combo_PAGEUP {
