@@ -37,7 +37,7 @@
         compatible = "zmk,combos";
         combo_LPAR {
             timeout-ms = <70>;
-            key-positions = <17 21>;
+            key-positions = <15 21>;
             bindings = <&kp LPAR>;
         };
         combo_RPAR {
