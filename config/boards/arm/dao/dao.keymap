@@ -96,12 +96,12 @@
 	    bindings = <&kp DOUBLE_QUOTES>;
 	};
         combo_HOME {
-            timeout-ms = <50>;
+            timeout-ms = <70>;
             key-positions = <7 8 9>;
             bindings = <&kp HOME>;
         };
         combo_END {
-            timeout-ms = <50>;
+            timeout-ms = <70>;
             key-positions = <20 21 22>;
             bindings = <&kp END>;
         };
