@@ -39,7 +39,7 @@
             timeout-ms = <70>;
             key-positions = <15 21>;
             bindings = <&kp LPAR>;
-        };
+        };g
         combo_RPAR {
             timeout-ms = <70>;
             key-positions = <15 24>;
