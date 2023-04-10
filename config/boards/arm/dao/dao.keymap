@@ -93,7 +93,7 @@
 	combo_DOUBLEQUOTE {
 	    timeout-ms = <70>;
 	    key-positions = <15 10>;
-	    bindings = <&kp LSHFT &kp SINGLE_QUOTE>;
+	    bindings = <&kp DOUBLE_QUOTES>;
 	};
         combo_HOME {
             timeout-ms = <50>;
