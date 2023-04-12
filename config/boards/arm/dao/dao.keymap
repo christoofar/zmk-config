@@ -29,6 +29,16 @@
                 , <&macro_release &kp LALT>
                 ;
         };
+        zed_rub_out: zed_rub_out {
+            label = "ZM_zed_rub_out";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                , <&macro_tap &BSPC>
+                , <&macro_release &kp LCTRL>
+                ;
+        };	
     };
 };
 
@@ -110,6 +120,11 @@
             key-positions = <32 33>;
             bindings = <&kp LGUI>;
         };
+	combo_RUBOUT {
+	    timeout-ms = <50>;
+	    key-positions = <18 19>;
+	    bindings = <&zed_rub_out>;
+	};
         combo_RGUI {
 	    // This is a quick way to strike the Compose key
 	    // (when the Compose key is mapped to RGUI
