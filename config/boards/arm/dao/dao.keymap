@@ -92,7 +92,7 @@
         }; 
         combo_PAGEDOWN {
             timeout-ms = <35>;
-            key-positions = <20 21>;
+            key-positions = <32 33>;
             bindings = <&kp PAGE_DOWN>;
         };
 	combo_QUOTE {
@@ -124,6 +124,11 @@
 	    timeout-ms = <50>;
 	    key-positions = <18 19>;
 	    bindings = <&zed_rub_out>;
+	};
+	combo_BACKSPACE {
+	    timeout-ms = <50>;
+	    key-positions = <20 21>;
+	    bindings = <&kb BSPC>;
 	};
         combo_RGUI {
 	    // This is a quick way to strike the Compose key
