@@ -128,7 +128,7 @@
 	combo_BACKSPACE {
 	    timeout-ms = <50>;
 	    key-positions = <20 21>;
-	    bindings = <&kb BSPC>;
+	    bindings = <&kp BSPC>;
 	};
         combo_RGUI {
 	    // This is a quick way to strike the Compose key
