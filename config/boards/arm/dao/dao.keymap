@@ -123,7 +123,7 @@
 	combo_RUBOUT {
 	    timeout-ms = <25>;
 	    key-positions = <18 19>;
-	    bindings = <&zed_rub_out>;
+	    bindings = <&kp LC(BSPC)>;
 	};
 	combo_BACKSPACE {
 	    timeout-ms = <25>;
