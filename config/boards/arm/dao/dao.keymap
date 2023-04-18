@@ -121,12 +121,12 @@
             bindings = <&kp LGUI>;
         };
 	combo_RUBOUT {
-	    timeout-ms = <35>;
+	    timeout-ms = <25>;
 	    key-positions = <18 19>;
 	    bindings = <&zed_rub_out>;
 	};
 	combo_BACKSPACE {
-	    timeout-ms = <35>;
+	    timeout-ms = <25>;
 	    key-positions = <20 21>;
 	    bindings = <&kp BSPC>;
 	};
