@@ -61,7 +61,7 @@
             bindings = <&kp LEFT_BRACE>;
         };
         combo_RCURLY {
-            timeout-ms = <50>;
+            timeout-ms = <35>;
             key-positions = <18 24>;
             bindings = <&kp RIGHT_BRACE>;
         };
