@@ -52,7 +52,7 @@
         };
         combo_RPAR {
             timeout-ms = <50>;
-            key-positions = <15 24>;
+            key-positions = <15 33>;
             bindings = <&kp RPAR>;
         };
         combo_LCURLY {
@@ -62,7 +62,7 @@
         };
         combo_RCURLY {
             timeout-ms = <50>;
-            key-positions = <18 24>;
+            key-positions = <18 33>;
             bindings = <&kp RIGHT_BRACE>;
         };
         combo_LBRACKET {
@@ -72,7 +72,7 @@
         };	
         combo_RBRACKET {
             timeout-ms = <50>;
-            key-positions = <17 24>;
+            key-positions = <17 33>;
             bindings = <&kp RIGHT_BRACKET>;
         };
 	combo_LESSTHAN {
@@ -82,7 +82,7 @@
 	};
 	combo_GREATERTHAN {
 	    timeout-ms = <50>;
-	    key-positions = <16 24>;
+	    key-positions = <16 33>;
 	    bindings = <&kp GREATER_THAN>;
 	};
         combo_PAGEUP {
