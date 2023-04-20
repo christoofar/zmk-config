@@ -47,42 +47,42 @@
         compatible = "zmk,combos";
         combo_LPAR {
             timeout-ms = <71>;
-            key-positions = <15 21>;
+            key-positions = <2 15>;
             bindings = <&kp LPAR>;
         };
         combo_RPAR {
             timeout-ms = <71>;
-            key-positions = <15 33>;
+            key-positions = <8 21>;
             bindings = <&kp RPAR>;
         };
         combo_LCURLY {
             timeout-ms = <71>;
-            key-positions = <18 21>;
+            key-positions = <5 18>;
             bindings = <&kp LEFT_BRACE>;
         };
         combo_RCURLY {
             timeout-ms = <71>;
-            key-positions = <18 33>;
+            key-positions = <11 24>;
             bindings = <&kp RIGHT_BRACE>;
         };
         combo_LBRACKET {
             timeout-ms = <71>;
-            key-positions = <17 21>;
+            key-positions = <4 17>;
             bindings = <&kp LEFT_BRACKET>;
         };	
         combo_RBRACKET {
             timeout-ms = <71>;
-            key-positions = <17 33>;
+            key-positions = <10 23>;
             bindings = <&kp RIGHT_BRACKET>;
         };
 	combo_LESSTHAN {
 	    timeout-ms = <71>;
-	    key-positions = <16 21>;
+	    key-positions = <3 16>;
 	    bindings = <&kp LESS_THAN>;
 	};
 	combo_GREATERTHAN {
 	    timeout-ms = <71>;
-	    key-positions = <16 33>;
+	    key-positions = <9 22>;
 	    bindings = <&kp GREATER_THAN>;
 	};
         combo_PAGEUP {
