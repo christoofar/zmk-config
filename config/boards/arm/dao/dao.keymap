@@ -46,17 +46,17 @@
     combos {
         compatible = "zmk,combos";
         combo_LPAR {
-            timeout-ms = <50>;
+            timeout-ms = <35>;
             key-positions = <15 21>;
             bindings = <&kp LPAR>;
         };
         combo_RPAR {
-            timeout-ms = <50>;
+            timeout-ms = <35>;
             key-positions = <15 24>;
             bindings = <&kp RPAR>;
         };
         combo_LCURLY {
-            timeout-ms = <50>;
+            timeout-ms = <35>;
             key-positions = <18 21>;
             bindings = <&kp LEFT_BRACE>;
         };
@@ -66,22 +66,22 @@
             bindings = <&kp RIGHT_BRACE>;
         };
         combo_LBRACKET {
-            timeout-ms = <50>;
+            timeout-ms = <35>;
             key-positions = <17 21>;
             bindings = <&kp LEFT_BRACKET>;
         };	
         combo_RBRACKET {
-            timeout-ms = <50>;
+            timeout-ms = <35>;
             key-positions = <17 24>;
             bindings = <&kp RIGHT_BRACKET>;
         };
 	combo_LESSTHAN {
-	    timeout-ms = <50>;
+	    timeout-ms = <35>;
 	    key-positions = <16 21>;
 	    bindings = <&kp LESS_THAN>;
 	};
 	combo_GREATERTHAN {
-	    timeout-ms = <50>;
+	    timeout-ms = <35>;
 	    key-positions = <16 24>;
 	    bindings = <&kp GREATER_THAN>;
 	};
@@ -114,11 +114,6 @@
             timeout-ms = <70>;
             key-positions = <32 33 34>;
             bindings = <&kp END>;
-        };
-        combo_LGUI {
-            timeout-ms = <50>;
-            key-positions = <32 33>;
-            bindings = <&kp LGUI>;
         };
 	combo_RUBOUT {
 	    timeout-ms = <25>;
