@@ -146,7 +146,7 @@
 //        | LALT     |  Q  |  J  |  V  |  D  |  K  |     |  X  |  H   |  /  |  ,  |  .  |  ESC     |
 //                           | LGUI | LWR | SH ENT |     | SPC | RSE  | RSE |
                         bindings = <
-   &none    &mt LALT TAB &kp W &kp L &kp Y &kp P &kp B            &kp Z  &kp F  &kp O     &kp U     &kp COMMA   &mt RALT BSPC  &none
+   &none    &mt LALT TAB &kp W &kp L &kp Y &kp P &kp B            &kp Z  &kp F  &kp O     &kp U     &kp COLON   &mt RALT BSPC  &none
             &kp LCTRL    &kp C &kp R &kp S &kp T &kp G            &kp M  &kp N  &kp E     &kp I     &kp A       &mt RCTRL SEMI
             &kp LALT     &kp Q &kp J &kp V &kp D &kp K            &kp X  &kp H  &kp FSLH  &kp COMMA &kp DOT     &kp ESC
                          &kp LGUI &mo LWR &mt LSHFT RET       &kp SPACE  &mo RSE  &kp LGUI
