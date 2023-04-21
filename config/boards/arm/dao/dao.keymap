@@ -54,11 +54,11 @@
 / {
     combos {
         compatible = "zmk,combos";
-        combo_EQ = {
-	    timeout-ms = <71>;
-	    key-positions = <2 11>;
-	    bindings = <&none>;
-	};
+        combo_EQUAL {
+            timeout-ms = <71>;
+            key-positions = <2 11>;
+            bindings = <&zed_assignment>;
+        };
         combo_ASSIGNMENT {
             timeout-ms = <71>;
             key-positions = <4 9>;
