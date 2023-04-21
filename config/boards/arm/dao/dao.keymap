@@ -45,7 +45,7 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_tap &kp COLON>
-                , <&macro_tap &kp EQUALS>
+                , <&macro_tap &kp EQUAL>
                 ;
         };		
     };
