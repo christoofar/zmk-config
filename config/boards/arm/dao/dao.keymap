@@ -57,7 +57,7 @@
         combo_EQUAL {
             timeout-ms = <71>;
             key-positions = <2 11>;
-            bindings = <&kp RPAR>;
+            bindings = <&kp EQUAL>;
         };
         combo_ASSIGNMENT {
             timeout-ms = <71>;
