@@ -38,13 +38,27 @@
                 , <&macro_tap &kp BSPC>
                 , <&macro_release &kp LCTRL>
                 ;
-        };	
+        };
+        zed_assignment: zed_assignment {
+            label = "ZM_zed_assignment";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp COLON>
+                , <&macro_tap &kp EQUALS>
+                ;
+        };		
     };
 };
 
 / {
     combos {
         compatible = "zmk,combos";
+        combo_ASSIGNMENT {
+            timeout-ms = <71>;
+            key-positions = <4 9>;
+            bindings = <&zed_assignment>;
+        };
         combo_LPAR {
             timeout-ms = <71>;
             key-positions = <2 15>;
