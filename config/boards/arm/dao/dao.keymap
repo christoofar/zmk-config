@@ -55,12 +55,12 @@
     combos {
         compatible = "zmk,combos";
         combo_EQUAL {
-            timeout-ms = <71>;
+            timeout-ms = <45>;
             key-positions = <2 11>;
             bindings = <&kp EQUAL>;
         };
         combo_ASSIGNMENT {
-            timeout-ms = <71>;
+            timeout-ms = <45>;
             key-positions = <4 9>;
             bindings = <&zed_assignment>;
         };
@@ -153,8 +153,6 @@
         };	
     };
 };
-
-/* test */
 
 / {
         keymap {
