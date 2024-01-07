@@ -12,6 +12,7 @@
 #define LWR 1
 #define RSE 2
 #define ADJ 3
+#define NAV 4
 
 &lt { quick_tap_ms = <200>; };
 &mt { quick_tap_ms = <200>; };
